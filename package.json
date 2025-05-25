@@ -5,16 +5,12 @@
     "build:all": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "client": "turbo run client"
+    "client": "turbo run client",
+    "prepare": "husky"
   },
   "devDependencies": {
     "husky": "^9.1.7",
     "turbo": "^2.5.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm run build && pnpm run lint"
-    }
   },
   "packageManager": "pnpm@9.12.3"
 }
